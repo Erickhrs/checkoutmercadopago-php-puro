@@ -21,7 +21,7 @@ include('./config/conexao.php');
         body {
             background-color: #f4fdf4;
             font-family: Arial, sans-serif;
-            color: #2e7d32;
+            color:rgb(235, 57, 57);
         }
 
         .header {
@@ -41,16 +41,19 @@ include('./config/conexao.php');
             background-color: #ffffff;
             padding: 30px;
             border-radius: 10px;
+            display: flex!important;
+            flex-direction: column!important;
         }
 
         .btn-success {
-            background-color: #2e7d32;
-            border-color: #2e7d32;
+            background-color:rgb(190, 54, 54);
+            border-color:rgb(255, 255, 255);
         }
 
         .btn-success:hover {
-            background-color: #27692b;
-            border-color: #27692b;
+            background-color:rgb(255, 255, 255);
+            border-color:rgb(255, 44, 44);
+            color:red;
         }
 
         .note {
@@ -67,12 +70,10 @@ include('./config/conexao.php');
 </head>
 
 <body>
-    <div class="header">
-        <img src="./assets/logo_blue_dark.svg" alt="Logo">
-    </div>
 
     <div class="container">
-        <h4 class="text-center mb-4">Iniciar Processo de compra</h4>
+         <img src="./assets/logo_blue_dark.svg" alt="Logo" style="width: 250px;margin:auto;padding-bottom:35px;">
+        <h4 class="text-center mb-4" style="padding-bottom:15px;">Iniciar Processo de compra</h4>
         <form action="gravar.php" method="POST">
             <div class="mb-3 hide">
                 <input type="text" class="form-control" name="total" value="19.99" placeholder="Valor total">
@@ -90,7 +91,7 @@ include('./config/conexao.php');
                     placeholder="ID do Usuário">
             </div>
 
-            <div class="mb-3">
+            <div class="mb-3" style="padding-bottom:15px;">
                 <input type="text" class="form-control" name="cupom" placeholder="Insira seu cupom de Desconto">
             </div>
             <div class="d-grid">

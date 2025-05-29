@@ -108,7 +108,7 @@ const cardForm = mp.cardForm({
     },
     onSubmit: event => {
       event.preventDefault();
-      document.getElementById('resposta').innerHTML = "Processando...";
+      document.getElementById('resposta').innerHTML = "Processando...<br>";
       const {
         paymentMethodId: payment_method_id,
         issuerId: issuer_id,
