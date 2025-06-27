@@ -5,7 +5,7 @@ include('./config/configApi.php'); // Se precisar, senão remova
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = mysqli_real_escape_string($conexao, $_POST['email'] ?? '');
     $id_user = (int)($_POST['id_user'] ?? 0);
-    $total = 19.00;      // Ou pegue de $_POST['total'] se quiser
+    $total = 29.90;      // Ou pegue de $_POST['total'] se quiser
     $desconto = 0;       // Ou pegue de $_POST['desconto']
 
     // Verificar se email e id_user existem na tabela acsq_users
